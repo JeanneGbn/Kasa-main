@@ -4,8 +4,8 @@ import PictureBanner from "../components/BannerPicture"
 import CardsBox from "../components/CardsBox.js"
 import Card from "../components/Card.js"
 import Footer from "../components/footer"
-import Picture from '../pictures/ImgMontagnes.png'
-import '../styles/index.css'
+import picture from '../pictures/ImgBanner.png'
+import '../styles/index.scss'
 
 
 const Home = () => {
@@ -13,7 +13,9 @@ const Home = () => {
         <div>
             <Header />
             <main>
-                <PictureBanner banner={Picture} alt="Photos de montagne" className="picture__banner--home" title="Chez vous, partout et ailleurs" />
+                <PictureBanner picture={picture} alt="Photos de montagne"  text="Chez vous, partout et ailleurs">
+                <h1> Chez vous, partout et ailleurs </h1>
+                </PictureBanner>
                 <CardsBox />
             </main>
             <Footer />

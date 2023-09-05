@@ -1,11 +1,11 @@
-import Banner from "../pictures/ImgBanner.png";
-import '../styles/home.css'
 
-function BannerPicture() {
+import '../styles/index.scss'
+
+function BannerPicture(props) {
     return (
-        <section className='banner_img'>
-            <img src={Banner}/>
-            <h1> Chez vous, partout et ailleurs </h1>
+        <section className='banner'>
+            <img src={props.picture} className="banner__img"/>
+            <h1> {props.text} </h1>
         </section>
     );
 };

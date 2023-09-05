@@ -1,0 +1,74 @@
+.logements_collapse_main_div {
+    display: flex;
+    flex-direction: row;
+    justify-content: normal;
+    justify-content: space-between;
+    border-radius: 10px;
+    gap: 50px;
+    width: 100%;
+}
+
+.logements_collapse {
+    width: 40%;
+}
+
+
+  .collapse {
+    margin-bottom: 20px;
+
+    &__style {
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px;
+      border-radius: 10px;
+      color: white;
+      font-size: 18px;
+      background-color: #FF6060;
+      height: 30px;
+  }
+  
+  &__title {
+      color: white;
+  }
+
+  &__open_arrow {
+    transform: scale(1.2);
+  }
+  &__text {
+    overflow: hidden;
+      background-color: #F6F6F6;
+      color: #FF6060;
+      font-size: 18px;
+      font-weight: 300;
+      line-height: 25px;
+      max-height: 0;
+      opacity: 0;
+      transition: all .3s ease-in-out;
+
+}
+
+  }
+  
+  .open {
+    max-height: 300px;
+    opacity: 1;
+    border-radius: 10px;
+  }
+  
+  .close {
+    max-height: 0;
+    opacity: 0;
+  }
+
+  .rotated {
+    transition: all 200ms ease-in-out;
+    transform: rotate(180deg);
+}
+.arrow {
+    transition: all 200ms ease-in-out;
+    transform: rotate(0deg); 
+}
+
+  

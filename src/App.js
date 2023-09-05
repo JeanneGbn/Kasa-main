@@ -1,7 +1,8 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Home from './pages/home';
 import D404 from './pages/D404';
-import FicheLogement from './pages/FicheLogement'
+import FicheLogement from './pages/FicheLogement';
+import A_propos from "./pages/DApropos";
 
 
 function App() {
@@ -9,8 +10,9 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/D404" element={<D404 />}/>
+        <Route path="*" element={<D404 />}/>
         <Route path="/D_Fiche-Logement/:id" element={<FicheLogement />} />
+        <Route path="/DApropos" element={<A_propos />} />
       </Routes>
     </BrowserRouter>
   );

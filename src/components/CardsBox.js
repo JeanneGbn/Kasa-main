@@ -1,5 +1,5 @@
 import Card from "../components/Card";
-import "../styles/home.css"
+import "../styles/index.scss"
 
 
 const CardsBox = () => {

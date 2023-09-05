@@ -1,47 +1,76 @@
 import Header from '../components/header';
 import Footer from '../components/footer';
-import annonces from "../annonces.json";
+import '../SASS/ficheLogement.scss';
+import '../styles/collapse.scss';
+import Collapse from '../components/Collapse';
+import Carrousel from '../components/Carrousel';
+import ActiveStar from '../pictures/star-active 1.png';
+import EmptyStar from '../pictures/star-inactive 1.png';
+
+import useAnnonce from '../components/useAnnonce';
 
 
-import { useParams, useNavigate } from "react-router-dom";
+
+
+const FicheLogement = (props) => {
+    const annonce = useAnnonce()
+    const rating = annonce.rating;
+    const maxStars = 5;
+    const stars = [];
+
+    for (let i = 1; i <= maxStars; i++) {
+      stars.push(
+          <img
+              key={i}
+              src={i <= rating ? ActiveStar : EmptyStar}
+          />
+      )
+  }
 
 
 
-
-const FicheLogement = () => {
     return (
         <div>
           <Header/>
           <main>
+           <Carrousel/>
             <div className='main_div'>
-                {annonces.map((annonces) => (
-                <div>
+                <div key={annonce.id}    >
                     <div className='presentation'>
-                    <div className='name_and_place'>
-                            <h1> {annonces.title} </h1>
-                            <p> {annonces.location} </p>
+                       <div className='presentation__name_and_place'>
+                            <h1> {annonce.title} </h1>
+                            <p> {annonce.location} </p>
                         </div>
-                        <div className='host'>
-                            <p> {annonces.host.name} </p>
-                            <img src={annonces.host.picture} alt={annonces.host.name}></img>
-                        </div>
-                    </div>
-                    <div className='tags_and_stars'>
-                        <div className='tags'>
-                          <p className='first_tag'> </p>
-                          <p className='second_tag'> </p>
-                          <p className='third_tag'> </p>
-                        </div>
-                        <div className='stars'>
-        
+                        <div className='presentation__host'>
+                            <p> {annonce.host.name} </p>
+                            <img src={annonce.host.picture} alt={annonce.host.name}></img>
                         </div>
                     </div>
-                    <div className='collapse_div'>
-                        <button className='description_collapse'> </button>
-                        <button className='equipements_collapse'> </button>
+                    <div className='description'>
+                      <div className='description__tags'>
+                        {annonce.tags.map((tag, index) => (
+                           <p key={index}>{tag}</p>
+                        ))}
+                      </div >
+                      <div className='description__stars'> 
+                      {stars}
+                      </div>
+                    </div>
+                    <div className='logements_collapse_main_div'>
+                      <div className='logements_collapse'>
+                        <Collapse text="Description">
+                            <p>{annonce.description}</p>
+                        </Collapse>
+                      </div>
+                      <div className='logements_collapse'>
+                        <Collapse text="Equipement">
+                            {<ul>{annonce.equipments.map((equipement) =>
+                                <li key={equipement}>{equipement}</li>)}
+                            </ul>}
+                        </Collapse>
+                      </div>
                     </div>
                 </div>
-                ))}
             </div>
 
           </main>
