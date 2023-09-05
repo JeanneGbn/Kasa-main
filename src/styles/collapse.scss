@@ -33,9 +33,6 @@
       color: white;
   }
 
-  &__open_arrow {
-    transform: scale(1.2);
-  }
   &__text {
     overflow: hidden;
       background-color: #F6F6F6;
@@ -69,6 +66,19 @@
 .arrow {
     transition: all 200ms ease-in-out;
     transform: rotate(0deg); 
+}
+
+@media  screen and (max-width:425px) {
+  .logements_collapse_main_div {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .logements_collapse {
+    width: 100%;
+  }
+
 }
 
   
