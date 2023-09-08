@@ -12,12 +12,12 @@ function Carrousel() {
     const getPictureCounter = () => {
         return `${currentImageIndex + 1} / ${logement.pictures.length}`;
     };
-    const nextImage = () => {
+    function nextImage() {
         setCurrentImageIndex((nextIndex) => (nextIndex + 1) % logement.pictures.length);
         setKey((prevKey) => prevKey + 1);
     };
 
-    const previousImage = () => {
+    function previousImage() {
         setCurrentImageIndex((prevIndex) =>
             prevIndex === 0 ? logement.pictures.length - 1 : (prevIndex - 1) % logement.pictures.length
         );

@@ -1,0 +1,28 @@
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.banner {
+    width: 90%;
+}
+
+.section_collapse {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__collapse_apropos {
+        width: 80%;
+    }
+}
+
+@media  screen and (max-width:425px) {
+
+    .section_collapse__collapse_apropos {
+        width: 100%;
+    }
+
+}

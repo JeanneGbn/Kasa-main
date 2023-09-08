@@ -1,5 +1,6 @@
 
 import '../styles/index.scss'
+import '../SASS/aPropos.scss';
 
 function BannerPicture(props) {
     return (

@@ -3,6 +3,7 @@ import Header from '../components/header';
 import Footer from '../components/footer';
 import BannerPicture from '../components/BannerPicture';
 import '../styles/collapse.scss';
+import '../SASS/aPropos.scss';
 import Collapse from "../components/Collapse";
 
 
@@ -13,8 +14,8 @@ function A_propos() {
             <Header />
             <main >
                 <BannerPicture picture={picture}/>
-                <section className='section_collapse collapse'>
-                    <div className='collpase_apropos'> 
+                <section className='section_collapse'>
+                    <div className='section_collapse__collapse_apropos'> 
                     <Collapse text="Fiabilité">
                             <p>Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes
                                 aux logements, et toutes les informations sont régulièrement vérifiées par nos équipes.

@@ -1,10 +1,11 @@
-import FooterBanner from "../pictures/footer.jpg"
+import Logo from '../pictures/logo-white.png';
 
 
 function Footer() {
     return (
-        <footer className="footer">
-            <img className="footer__img" src={FooterBanner}/>
+        <footer className='footer'> 
+            <img src={Logo} alt='Logo Kaza'></img>
+            <p className='footer__text'>©2020 KAsa. All rights reserved</p>
         </footer>
     );
 };

@@ -6,14 +6,22 @@ import Collapse from '../components/Collapse';
 import Carrousel from '../components/Carrousel';
 import ActiveStar from '../pictures/star-active 1.png';
 import EmptyStar from '../pictures/star-inactive 1.png';
-
+import {Navigate, useParams} from 'react-router-dom';
 import useAnnonce from '../components/useAnnonce';
+import annonces from '../annonces.json';
 
 
 
 
 const FicheLogement = (props) => {
     const annonce = useAnnonce()
+    const { id } = useParams()
+    const logement = annonces.find((item) => item.id === id)
+
+    if (!logement){
+      return <Navigate to="/D404"/>
+    }
+    
     const rating = annonce.rating;
     const maxStars = 5;
     const stars = [];
@@ -26,7 +34,6 @@ const FicheLogement = (props) => {
           />
       )
   }
-
 
 
     return (
