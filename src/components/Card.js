@@ -1,4 +1,4 @@
-import annonces from "../annonces.json";
+import annonces from '../annonces.json';
 import { Link } from 'react-router-dom';
 
 

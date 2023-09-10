@@ -1,7 +1,7 @@
 import Header from '../components/header';
 import Footer from '../components/footer';
 import '../SASS/ficheLogement.scss';
-import '../styles/collapse.scss';
+import '../SASS/collapse.scss';
 import Collapse from '../components/Collapse';
 import Carrousel from '../components/Carrousel';
 import ActiveStar from '../pictures/star-active 1.png';

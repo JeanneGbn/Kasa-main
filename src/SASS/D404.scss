@@ -3,7 +3,7 @@
     align-items: center;
     flex-direction: column;
     color: #FF6060;
-    margin: 150px;
+    width: 90%;
 
     &__text {
         font-size: 36px;
@@ -25,14 +25,19 @@
 
 .D404 {
 
+    width: 90%;
+
     & h1 {
         font-size: 125px;
     }
     &__text {
         font-size: 18px;
+        width: 80%;
+        text-align: center;
     }
     &__link {
         font-size: 14px;
+        width: 80%;
     }
 }
 

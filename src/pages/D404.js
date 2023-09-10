@@ -1,6 +1,6 @@
 import Header from '../components/header';
 import Footer from '../components/footer';
-import '../styles/D404.scss';
+import '../SASS/D404.scss';
 import { Link } from "react-router-dom";
 
 

@@ -2,9 +2,9 @@ import picture from '../pictures/ImgMontagnes.png';
 import Header from '../components/header';
 import Footer from '../components/footer';
 import BannerPicture from '../components/BannerPicture';
-import '../styles/collapse.scss';
+import '../SASS/collapse.scss';
 import '../SASS/aPropos.scss';
-import Collapse from "../components/Collapse";
+import Collapse from '../components/Collapse';
 
 
 

@@ -1,5 +1,5 @@
-import { useParams } from "react-router-dom"
-import annonces from '../annonces.json'
+import { useParams } from 'react-router-dom';
+import annonces from '../annonces.json';
 
 const useAnnonce = () => {
     const { id } = useParams();

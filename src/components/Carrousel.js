@@ -29,7 +29,7 @@ function Carrousel() {
     if (logement.pictures.length === 1) {
         return (
             <section className="carrousel">
-                <img src={currentImage} alt="logement" className="carrousel_style" />
+                <img src={currentImage} alt="logement" className="carrousel__style" />
             </section>
         );
     }
