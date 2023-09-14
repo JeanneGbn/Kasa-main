@@ -42,7 +42,8 @@ const FicheLogement = (props) => {
           <main>
            <Carrousel/>
             <div className='main_div'>
-                <div key={annonce.id}    >
+                <div key={annonce.id}>
+                  <div className='presentation_description'>
                     <div className='presentation'>
                        <div className='presentation__name_and_place'>
                             <h1> {annonce.title} </h1>
@@ -63,6 +64,7 @@ const FicheLogement = (props) => {
                       {stars}
                       </div>
                     </div>
+                  </div>
                     <div className='logements_collapse_main_div'>
                       <div className='logements_collapse'>
                         <Collapse text="Description">

@@ -10,7 +10,7 @@ function D404() {
             <Header />
             <main className="D404">
                 <h1>404</h1>
-                <p className="D404__text">Oups! La page demandez n'existe pas.</p>
+                <p className="D404__text">Oups! La page que vous demandez n'existe pas.</p>
                 <Link to="/">
                   <p className="D404__link">Retourner sur la page d'accueil</p>
                 </Link>

@@ -158,8 +158,8 @@
             width: 40%;
             margin-top: 0;
             position: absolute;
-            bottom: 150px;
             right: 0;
+            bottom: 0;
         }
         &__host p {
             font-size: 14px;
@@ -194,8 +194,8 @@
             width: 6%;
         }
     }
+    .presentation_description {
+        position: relative;
+    }
 }
 
-.main_div {
-    position: relative;
-}
