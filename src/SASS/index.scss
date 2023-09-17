@@ -103,7 +103,6 @@ body {
 .cards_box {
     background-color: #F6F6F6;
     border-radius: 20px;
-    padding: 30px;
     margin-right: 0px;
     width: 100%;
 }
@@ -113,15 +112,16 @@ body {
     justify-content: start;
     gap: 45px;
     grid-template-columns: repeat(auto-fill, minmax(21rem, 1fr));
-    padding: 15px;
+    padding: 30px;
     position: relative;
+    cursor: pointer;
 
     
     
 
     &__div {
-        width: 345px;
-        height: 345px;
+        width: 100%;
+        height: 100%;
         border-radius: 20px;
         position: relative;
         transition-property: transform;
