@@ -4,10 +4,11 @@ import { Link } from 'react-router-dom';
 
 function Card() {
     return (
-        <div className='card'>
+        <ul className='card'>
             {annonces.map((annonces) => (
+                <li key={annonces.id}>
                 <Link to={`/D_Fiche-Logement/${annonces.id}`}>
-                <div className='card__div' key={annonces.id}>
+                <div className='card__div' >
                     
                         <img src={annonces.cover} alt={annonces.title}></img>
                         <div className='card__overlay'>
@@ -16,9 +17,10 @@ function Card() {
                     
                 </div>
                 </Link>
+                </li>
 
             ))}
-        </div>
+        </ul>
     )
 }
 export default Card
