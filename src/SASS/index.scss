@@ -140,6 +140,10 @@ body {
     &__div:hover{
       transform: scale(1.1);
     }
+
+    & li {
+      list-style-type: none;
+    }
     
     & img {
         border-radius: 20px;

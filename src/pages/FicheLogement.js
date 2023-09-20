@@ -13,7 +13,7 @@ import annonces from '../annonces.json';
 
 
 
-const FicheLogement = (props) => {
+function FicheLogement(props) {
     const annonce = useAnnonce()
     const { id } = useParams()
     const logement = annonces.find((item) => item.id === id)

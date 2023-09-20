@@ -1,7 +1,7 @@
 import { useParams } from 'react-router-dom';
 import annonces from '../annonces.json';
 
-const useAnnonce = () => {
+function useAnnonce() {
     const { id } = useParams();
     const annonce = annonces.find((item) => item.id === id)
     return annonce;

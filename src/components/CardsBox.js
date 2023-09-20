@@ -2,7 +2,7 @@ import Card from '../components/Card';
 import '../SASS/index.scss';
 
 
-const CardsBox = () => {
+function CardsBox() {
     return (
         <section className='cards_box'>
             <Card />
