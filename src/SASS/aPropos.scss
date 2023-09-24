@@ -1,3 +1,10 @@
+body {
+    font-family: "Montserrat", sans-serif;
+    width: 100%;
+    margin: 0;
+    height: fit-content;
+  }
+
 main {
     display: flex;
     flex-direction: column;
@@ -19,14 +26,107 @@ main {
     }
 }
 
-@media  screen and (max-width:425px) {
+
+  @media  screen and (max-width:912px) {
+    .card__div {
+      width: 100%;
+      height: auto;
+    }
 
     .section_collapse__collapse_apropos {
         width: 100%;
     }
 
-    .banner {
-        width: 100%;
+    .footer {
+        margin-top: 55%;
     }
-
-}
+  }
+  
+  @media  screen and (max-width:800px) {
+  
+    body {
+      padding-left: 0;
+      padding-right: 0;
+      margin-left: 0;
+      margin-right: 0;
+    }
+    
+    .header {
+    
+    
+      &__nav {
+        font-size: 16px;
+        font-weight: 100;
+        width: 60%;
+        justify-content: right;
+        text-transform: uppercase;
+      }
+    
+      &__nav a {
+        padding-left: 10%;
+      }
+    
+      &__logo {
+        width: 30%;
+        height: auto;
+      }
+    }
+    
+    .banner {
+     width: 100%;
+      & h1 {
+        font-size: 25px;
+        width: 60%;
+        text-align: left;
+        padding-left: 5%;
+      }
+      & img {
+        max-height: 160px;
+      }
+    }
+  
+    .cards_box {
+      background-color: white;
+      padding: 0;
+    }
+    .card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 0;
+    
+      &__div {
+        width: 100%;
+        height: auto;
+      }
+    }
+    
+    .footer {
+  
+      &__text {
+        font-size: 14px;
+      }
+      & img {
+        width: 30%;
+      }
+    }
+    }
+    
+    @media  screen and (max-width:412px) {
+    
+    .card {
+    
+      &__title {
+        font-size: 10px;
+      }
+    }
+    
+    .header {
+      &__nav a {
+        padding-left: 0;
+      }
+    }
+    
+    
+    }
+    

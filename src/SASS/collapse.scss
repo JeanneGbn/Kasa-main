@@ -43,6 +43,8 @@
       max-height: 0;
       opacity: 0;
       transition: all .3s ease-in-out;
+      padding-left: 2%;
+      padding-right: 2%;
 
 }
 
@@ -68,7 +70,7 @@
     transform: rotate(0deg); 
 }
 
-@media  screen and (max-width:425px) {
+@media  screen and (max-width:800px) {
   .logements_collapse_main_div {
     display: flex;
     flex-direction: column;

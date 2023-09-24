@@ -29,15 +29,15 @@ function Carrousel() {
     if (logement.pictures.length === 1) {
         return (
             <section className="carrousel">
-                <img src={currentImage} alt="logement" className="carrousel__style" />
+                <img src={currentImage} alt="Photo du logement" className="carrousel__style" />
             </section>
         );
     }
     return (
         <section className="carrousel" key={key}>
-            <img src={currentImage}  className="carrousel__style" />
-            <img src={rightArrow}  onClick={nextImage} className="carrousel__right_arrow"></img>
-            <img src={leftArrow}  onClick={previousImage} className="carrousel__left_arrow"></img>
+            <img src={currentImage}  className="carrousel__style" alt='Photo du logement.' />
+            <img src={rightArrow}  onClick={nextImage} className="carrousel__right_arrow" alt='Flèche droite'></img>
+            <img src={leftArrow}  onClick={previousImage} className="carrousel__left_arrow" alt='Flèche gauche'></img>
             <div className="carrousel__counter"> {getPictureCounter()}</div>
         </section>
     )

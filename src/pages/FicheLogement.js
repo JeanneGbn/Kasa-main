@@ -31,6 +31,7 @@ function FicheLogement(props) {
           <img
               key={i}
               src={i <= rating ? ActiveStar : EmptyStar}
+              alt='Etoile'
           />
       )
   }

@@ -1,4 +1,8 @@
-
+body {
+    font-family: "Montserrat", sans-serif;
+    width: 100%;
+    margin: 0;
+  }
 
 
 .carrousel {
@@ -127,7 +131,7 @@
     }
 }
 
-@media  screen and (max-width:425px) {
+@media  screen and (max-width:650px) {
 
     .carrousel {
         &__left_arrow {
